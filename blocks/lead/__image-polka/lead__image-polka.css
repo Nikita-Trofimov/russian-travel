@@ -1,5 +1,5 @@
 .lead__image-polka {
-  padding: 0 148px ;
+  padding: 0 148px;
   width: 100%;
   margin-top: 56px;
   box-sizing: border-box;
@@ -10,7 +10,7 @@
 
 @media (max-width: 1024px) {
   .lead__image-polka {
-    padding: 0 48px ;
+    padding: 0 48px;
   }
 }
 
