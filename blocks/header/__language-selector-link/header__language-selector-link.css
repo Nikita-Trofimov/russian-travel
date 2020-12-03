@@ -1,0 +1,18 @@
+.header__language-selector-link {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.header__language-selector-link:hover {
+  transition: opacity .3s ease-in;
+  opacity: .8;
+}
+
+@media (max-width: 320px) {
+  .header__language-selector-link {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}

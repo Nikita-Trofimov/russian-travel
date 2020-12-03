@@ -1,15 +1,18 @@
 @import "../vendor/normalize.css";
 @import "../vendor/fonts.css";
+@import "../blocks/body/body.css";
 @import "../blocks/page/page.css";
 @import "../blocks/header/header.css";
 @import "../blocks/header/__logo/logo.css";
 @import "../blocks/header/__language-selectors/header__language-selectors.css";
 @import "../blocks/header/__language-selector/header__language-selector.css";
-@import "../blocks/header/__language-selector/_active/header__language-selector_active.css";
+@import "../blocks/header/__language-selector-link/header__language-selector-link.css";
+@import "../blocks/header/__language-selector-link/_active/header__language-selector-link_active.css";
 @import "../blocks/lead/lead.css";
 @import "../blocks/lead/__title/lead__title.css";
 @import "../blocks/lead/__subtitle/lead__subtitle.css";
-@import "../blocks/lead/__image-polka/lead__image-polka.css";
+@import "../blocks/lead/__illustration/lead__illustration.css";
+@import "../blocks/lead/__image/lead__image.css";
 @import "../blocks/lead/__caption/lead__caption.css";
 @import "../blocks/intro/intro.css";
 @import "../blocks/intro/__title/intro__title.css";
@@ -23,7 +26,7 @@
 @import "../blocks/place/__title/place__title.css";
 @import "../blocks/place/__url-heading/place__url-heading.css";
 @import "../blocks/place/__link/place__link.css";
-@import "../blocks/place/__images/place__image.css";
+@import "../blocks/place/__image/place__image.css";
 @import "../blocks/place/__website/place__website.css";
 @import "../blocks/place/__paragraphs/place__paragraphs.css";
 @import "../blocks/place/__paragraph/place__paragraph.css";
@@ -31,8 +34,7 @@
 @import "../blocks/cover/__title/cover__title.css";
 @import "../blocks/cover/__subtitle/cover__subtitle.css";
 @import "../blocks/cover/__link/cover__link.css";
-
 @import "../blocks/footer/footer.css";
-@import "../blocks/footer/__links/footer__links.css";
-@import "../blocks/footer/__link/footer__link.css";
+@import "../blocks/footer-nav/__links/footer-nav__links.css";
+@import "../blocks/footer-nav/__link/footer-nav__link.css";
 @import "../blocks/footer/__author/footer__author.css";

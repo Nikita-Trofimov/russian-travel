@@ -1,4 +1,4 @@
-.footer__links {
+.footer-nav__links {
   margin: 0;
   padding: 0;
   font-weight: normal;
@@ -9,7 +9,7 @@
 }
 
 @media (max-width: 700px) {
-  .footer__links {
+  .footer-nav__links {
     display: block;
     font-size: 24px;
     line-height: 24px;

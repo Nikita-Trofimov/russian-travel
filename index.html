@@ -7,22 +7,24 @@
   <title>Путешествия по России</title>
   
 </head>
-<body>
+<body class="body">
   <div class="page">
     <header class="header">
       <div class="header__logo">     
       </div>
-      <div class="header__language-selectors">
-        <a href="#" target="_self" class="header__language-selector header__language-selector_active">Ru</a>
-        <a href="#" target="_self" class="header__language-selector">En</a>
-      </div>
+      <ul class="header__language-selectors">
+        <li class="header__language-selector"><a href="#" target="_self" class="header__language-selector-link header__language-selector-link_active">Ru</a></li>
+        <li class="header__language-selector"><a href="#" target="_self" class="header__language-selector-link">En</a></li>
+      </ul>
     </header>
     <main class="main">
       <section class="lead">
         <h1 class="lead__title">Путешествия по России</h1>
         <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-        <img class="lead__image-polka" src="./images/lead-polka.jpg" alt="изображение полки в вагоне">
-        <p class="lead__caption">ваша полка — верхняя</p>
+        <figure class="lead__illustration">
+          <img class="lead__image" src="./images/lead-polka.jpg" alt="изображение полки в вагоне">
+          <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
+      </figure> 
       </section>
 
       <article class="intro">
@@ -55,11 +57,11 @@
         <img src="./images/photo-grid-baikal-2.jpg" alt="фото Байкала" class="photo-grid__image">
         <img src="./images/photo-grid-ergaki.jpg" alt="парк Ергаки" class="photo-grid__image">
       </section>
-      <section class="places">
-        <div class="place">
+      <section class="places" aria-label="места России">
+        <article class="place">
           <h2 class="place__title">Куршская коса</h2>
           <div class="place__website">
-            <p class="place__url-heading">URL</p>
+            <p class="place__url-heading">url</p>
             <a href="http://park-kosa.ru" target="_blank" class="place__link">park-kosa.ru</a>
           </div>
           <img src="./images/place-kosa.jpg" alt="фото Куршская коса" class="place__image">
@@ -70,10 +72,10 @@
             Для путешественника и исследователя там же по соседству — самая западная точка России, 
             Балтийская коса, — и немецкое наследие россыпи небольших приморских городов. 
             Атмосфера здешних мест исключает суету, окуная в спокойствие природы и запах стального, прохладного моря.</p>
-        </div>
-      </div>
+          </div>
+        </article>
 
-        <div class="place">
+        <article class="place">
           <h2 class="place__title">Кольский</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
@@ -88,9 +90,9 @@
             Возможно, вы не интересовались пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. 
             Но ваша мечта увидеть северное сияние начинает сбываться с билетом в Мурманск.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="place">
+        <article class="place">
           <h2 class="place__title">Алтай</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
@@ -105,9 +107,9 @@
             По лесам Алтая бродят лоси, над хребтами летают орлы, а на равнинах пасутся косули. 
             И знаменитые манулы — тоже обитатели Алтайского края.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="place">
+        <article class="place">
           <h2 class="place__title">Зимний Байкал</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
@@ -121,9 +123,9 @@
             Это такой вид спорта, когда лыжник привязывает себя к мотоциклу, и тандем старается развить как можно бóльшую скорость на льду.
             В марте 2019 года на фестивале «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="place">
+        <article class="place">
           <h2 class="place__title">Карелия</h2>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
@@ -135,23 +137,26 @@
             В девственном лесу на сотню километров не встретишь тропы. А на редких тропинках деревья 
             в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.</p>
           </div>
-        </div>
+        </article>
       </section>
 
       <section class="cover">
-        <a class="cover__link" target="_blank" href="https://stampsy.com/na-elektrichkakh-do-baikala"></a>
-        <h2 class="cover__title">До Байкала «на собаках»</h2>
-        <p class="cover__subtitle">По мотивам учебной темы о Транссибе&nbsp;&mdash;&nbsp;путешествие от столицы до Байкала на электричках.</p>
+        <a class="cover__link" target="_blank" href="https://stampsy.com/na-elektrichkakh-do-baikala">
+          <h2 class="cover__title">До Байкала «на собаках»</h2>
+          <p class="cover__subtitle">По мотивам учебной темы о Транссибе&nbsp;&mdash;&nbsp;путешествие от столицы до Байкала на электричках.</p>
+        </a>
       </section>
     </main>
     <footer class="footer">
-      <ul class="footer__links">
-        <li><a href="https://yandex.ru/maps" target="_blank" class="footer__link">Карты</a></li>
-        <li><a href="https://yandex.ru/pogoda" target="_blank" class="footer__link">Погода</a></li>
-        <li><a href="https://rasp.yandex.ru" target="_blank" class="footer__link">Расписание</a></li>
-        <li><a href="https://calendar.yandex.ru" target="_blank" class="footer__link">Календарь</a></li>
-        <li><a href="https://travel.yandex.ru" target="_blank" class="footer__link">Путешествия</a></li>
-      </ul>
+      <nav class="footer-nav">
+        <ul class="footer-nav__links">
+          <li><a href="https://yandex.ru/maps" target="_blank" class="footer-nav__link">Карты</a></li>
+          <li><a href="https://yandex.ru/pogoda" target="_blank" class="footer-nav__link">Погода</a></li>
+          <li><a href="https://rasp.yandex.ru" target="_blank" class="footer-nav__link">Расписание</a></li>
+          <li><a href="https://calendar.yandex.ru" target="_blank" class="footer-nav__link">Календарь</a></li>
+          <li><a href="https://travel.yandex.ru" target="_blank" class="footer-nav__link">Путешествия</a></li>
+        </ul>
+      </nav>
       <p class="footer__author">&copy; 2020. Трофимов Никита</p>
     </footer>
   </div>
